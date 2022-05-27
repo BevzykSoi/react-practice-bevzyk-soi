@@ -1,0 +1,13 @@
+.footer {
+    background-color: #222227;
+    height: 200px;
+    margin-top: 30.3%;
+    box-sizing: border-box;
+}
+
+.footerHeader {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    color: #fff;
+}

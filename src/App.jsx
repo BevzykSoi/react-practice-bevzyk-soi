@@ -1,10 +1,14 @@
 import { Component } from "react";
-import styles from "./App.module.css";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 export default class App extends Component {
     render() {
-        return(
-            <h1 className={styles.mainHeading}>I HAVE A VERY BIG EXPERIENCE OF REACT!!! HELLO WORLD!!!</h1>
+        return (
+            <>
+                <Header></Header>
+                <Footer></Footer>
+            </>
         );
     }
 }
