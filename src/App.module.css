@@ -1,0 +1,15 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desc {
+    text-align: center;
+}
+
+.logo {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 35px;
+}
