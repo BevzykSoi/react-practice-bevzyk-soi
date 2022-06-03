@@ -20,8 +20,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%;
-    height: 100%;
+    width: 450px;
+    height: 103.5%;
     background-color: #9b0b0b;
     display: flex;
     flex-direction: column;
