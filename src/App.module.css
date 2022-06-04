@@ -13,3 +13,17 @@
     margin: 0 auto;
     margin-top: 35px;
 }
+
+.black {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.red {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    margin-top: 50px;
+}
