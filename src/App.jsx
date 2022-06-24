@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
-import { nanoid } from "nanoid";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
+import TodoList from "./components/TodoList/TodoList";
 import styles from "./App.module.css";
 import logo from "./images/react-logo.png";
 
@@ -38,7 +38,7 @@ function App() {
 
             return [...valueTodo, inputValueTodo];
         })
-    }
+    } 
 
     todos = JSON.parse(localStorage.getItem("todos"));
 
@@ -59,15 +59,7 @@ function App() {
             <h2 className={styles.todosTitle}><b>TODOS:</b></h2>
             <input type="text" className={styles.inputDef} ref={inputTodoRef} />
             <button type="button" onClick={handleTodo}>Add todo</button>
-            <ul className={styles.todoList}>
-                {todos !== [] && todos !== null && todos.map(todo => {
-                    return (
-                        <li className={styles.todo} key={nanoid()}>
-                            <h4>{todo}</h4>
-                        </li>
-                    );
-                })}
-            </ul>
+            <TodoList todos={todos}></TodoList>
             <Footer></Footer>
         </div>
     );

@@ -1,0 +1,12 @@
+.inputDef {
+    margin: 20px 0;
+}
+
+.todoList {
+    list-style: decimal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 140px;
+    max-width: 140px;
+}
